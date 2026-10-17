@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Juanita Glow Accesorios</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+	.logo {
+    width: 220px;
+    max-width: 80%;
+    height: auto;
+    margin-bottom: 15px;
+	}
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fffaf7;
+            color: #333;
+
+        }
+
+        header {
+            background: #f7e8df;
+            text-align: center;
+            padding: 45px 20px;
+        }
+
+        header h1 {
+            font-family: Georgia, serif;
+            font-size: 42px;
+            color: #6b4a3b;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 18px;
+            color: #7b6256;
+            font-style: italic;
+        }
+
+        .boton-whatsapp {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 13px 25px;
+            background-color: #25D366;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .boton-whatsapp:hover {
+            transform: scale(1.05);
+        }
+
+        .presentacion {
+            text-align: center;
+            padding: 50px 20px 20px;
+        }
+
+        .presentacion h2 {
+            font-family: Georgia, serif;
+            color: #6b4a3b;
+            font-size: 30px;
+            margin-bottom: 15px;
+        }
+
+        .presentacion p {
+            max-width: 650px;
+            margin: auto;
+            line-height: 1.7;
+            color: #666;
+        }
+
+        .catalogo {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .catalogo h2 {
+            text-align: center;
+            font-family: Georgia, serif;
+            color: #6b4a3b;
+            font-size: 30px;
+            margin-bottom: 30px;
+        }
+
+        .productos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 25px;
+        }
+
+        .producto {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            transition: 0.3s;
+        }
+
+        .producto:hover {
+            transform: translateY(-5px);
+        }
+
+        .producto img {
+            width: 100%;
+            height: 260px;
+            object-fit: cover;
+            background-color: #eee;
+        }
+
+        .producto-info {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .producto-info h3 {
+            color: #6b4a3b;
+            margin-bottom: 10px;
+            font-family: Georgia, serif;
+        }
+
+        .producto-info p {
+            color: #777;
+            font-size: 14px;
+            margin-bottom: 12px;
+        }
+
+        .precio {
+            font-size: 20px;
+            font-weight: bold;
+            color: #9a6f58;
+            margin-bottom: 15px;
+        }
+
+        .comprar {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #6b4a3b;
+            color: white;
+            text-decoration: none;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+
+        .comprar:hover {
+            background-color: #4f362b;
+        }
+
+        footer {
+            margin-top: 60px;
+            background-color: #f7e8df;
+            text-align: center;
+            padding: 30px 20px;
+            color: #6b4a3b;
+        }
+
+        footer h3 {
+            font-family: Georgia, serif;
+            margin-bottom: 10px;
+        }
+
+        footer p {
+            font-size: 14px;
+        }
+
+        @media (max-width: 600px) {
+
+            header h1 {
+                font-size: 34px;
+            }
+
+            .producto img {
+                height: 230px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ENCABEZADO -->
+    <header>
+
+        <img src="logo1.png" alt="Juanita Glow" class="logo">
+
+        <p>Resalta tu escencia, proyecta tu confianza</p>
+
+        <!-- CAMBIA EL NÚMERO POR TU WHATSAPP -->
+        <a
+            class="boton-whatsapp"
+            href="https://wa.me/573213599847"
+            target="_blank">
+            Escríbenos por WhatsApp
+        </a>
+
+    </header>
+
+
+    <!-- PRESENTACIÓN -->
+    <section class="presentacion">
+
+        <h2>Juanita Glow Accesorios</h2>
+
+        <p>
+            Joyas sencillas y elegantes para acompañarte
+            en cada momento. Descubre accesorios creados
+            para resaltar tu estilo con sutileza.
+        </p>
+
+    </section>
+
+
+    <!-- CATÁLOGO -->
+    <section class="catalogo">
+
+        <h2>Nuestro catálogo</h2>
+
+        <div class="productos">
+
+
+            <!-- PRODUCTO 1 -->
+            <div class="producto">
+
+                <!-- AQUÍ IRÁ LA FOTO DEL PRODUCTO -->
+                <img
+                    src="https://via.placeholder.com/500x500?text=Collar"
+                    alt="Collar Juanita Glow">
+
+                <div class="producto-info">
+
+                    <h3>Collar Sutil</h3>
+
+                    <p>
+                        Collar delicado y elegante para
+                        complementar cualquier look.
+                    </p>
+
+                    <div class="precio">
+                        $45.000 COP
+                    </div>
+
+                    <!-- CAMBIA EL NÚMERO POR TU WHATSAPP -->
+                    <a
+                        class="comprar"
+                        href="https://wa.me/573213599847?text=Hola,%20estoy%20interesado%20en%20el%20Collar%20Sutil"
+                        target="_blank">
+                        Comprar por WhatsApp
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCTO 2 -->
+            <div class="producto">
+
+                <img
+                    src="https://via.placeholder.com/500x500?text=Aretes"
+                    alt="Aretes Juanita Glow">
+
+                <div class="producto-info">
+
+                    <h3>Aretes Glow</h3>
+
+                    <p>
+                        Aretes sencillos para darle un toque
+                        especial a tu estilo.
+                    </p>
+
+                    <div class="precio">
+                        $35.000 COP
+                    </div>
+
+                    <a
+                        class="comprar"
+                        href="https://wa.me/573213599847?text=Hola,%20estoy%20interesado%20en%20los%20Aretes%20Glow"
+                        target="_blank">
+                        Comprar por WhatsApp
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCTO 3 -->
+            <div class="producto">
+
+                <img
+                    src="https://via.placeholder.com/500x500?text=Pulsera"
+                    alt="Pulsera Juanita Glow">
+
+                <div class="producto-info">
+
+                    <h3>Pulsera Elegance</h3>
+
+                    <p>
+                        Una pieza delicada para complementar
+                        tu estilo todos los días.
+                    </p>
+
+                    <div class="precio">
+                        $40.000 COP
+                    </div>
+
+                    <a
+                        class="comprar"
+                        href="https://wa.me/573213599847?text=Hola,%20estoy%20interesado%20en%20la%20Pulsera%20Elegance"
+                        target="_blank">
+                        Comprar por WhatsApp
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRODUCTO 4 -->
+            <div class="producto">
+
+                <img
+                    src="https://via.placeholder.com/500x500?text=Set+de+Joyas"
+                    alt="Set de joyas Juanita Glow">
+
+                <div class="producto-info">
+
+                    <h3>Set Glow</h3>
+
+                    <p>
+                        Un conjunto de accesorios pensado
+                        para combinar fácilmente.
+                    </p>
+
+                    <div class="precio">
+                        $70.000 COP
+                    </div>
+
+                    <a
+                        class="comprar"
+                        href="https://wa.me/573213599847?text=Hola,%20estoy%20interesado%20en%20el%20Set%20Glow"
+                        target="_blank">
+                        Comprar por WhatsApp
+                    </a>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+
+        <h3>Juanita Glow Accesorios</h3>
+
+        <p>Resalta tu escencia, proyecta tu confianza</p>
+
+        <p>© 2026 Juanita Glow. Todos los derechos reservados.</p>
+
+    </footer>
+
+</body>
+</html>
