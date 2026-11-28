@@ -248,6 +248,54 @@
         .admin-aviso { margin-top: 14px; padding: 12px; background: #fff8e9; border-radius: 10px; color: #745b2b; font-size: 13px; }
         @media(max-width:600px) { .admin-fila { grid-template-columns: 1fr; } }
 
+       /* Producto agotado */
+.producto-agotado {
+    position: relative;
+}
+
+.producto-agotado img {
+    opacity: 0.4;
+}
+
+.producto-agotado::after {
+    content: "AGOTADO";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 260px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(73, 50, 61, 0.15);
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+}
+
+@media (max-width: 600px) {
+    .producto-agotado::after {
+        height: 230px;
+    }
+}
+
+
+       /* Fondo del catálogo */
+#catalogo {
+    background-image: url("imagenes/muñecalogo.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    padding: 25px 15px;
+    border-radius: 15px;
+}
 </style>
 </head>
 <body>
